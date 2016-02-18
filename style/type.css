@@ -173,6 +173,16 @@ figure img{
 	display:block;
 	height:100px;
 	margin:0 auto;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform:rotate(0deg);
+	transition:all .8s ease-in-out;
+}
+figure:hover img{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	transform:rotate(360deg);
+	transition:all .8s ease-in-out;
 }
 figure p{
 	width:80%;
@@ -192,6 +202,8 @@ figure p{
 	width:80%;
 	margin:0 auto;
 	background:#000;
+	overflow:hidden;
+	position:relative;
 }
 .container ul li a img{
 	width:100%;
@@ -203,6 +215,27 @@ figure p{
 	filter:alpha(opacity:50);
 	transition:all .4s ease-in-out;
 }
+.container ul li a span {
+	position: absolute;
+	display:block;
+	text-align:center;
+	width:40px;
+	height:40px;
+	margin:-20px 0 0 -40px;
+	top: 50%;
+	left: 0;
+	transition:all .4s ease-in-out;
+}
+.container ul li a span img{
+	width:100%;
+}
+.container ul li a:hover span{
+	left: 50%;
+	margin:-20px 0 0 -20px;
+	transition:all .4s ease-in-out;
+}
+
+
 footer{
 	background:#000;
 	height:100px;

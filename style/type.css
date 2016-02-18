@@ -11,6 +11,9 @@ body{
 }
 header{
 	background: transparent url("http://i13.tietuku.com/eadbafe2b536b4d1.jpg") no-repeat scroll 0px 0px / cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	    src='http://i13.tietuku.com/eadbafe2b536b4d1.jpg',
+	    sizingMethod='scale');
 	min-height:520px;
 	position:relative;
 }
@@ -106,6 +109,16 @@ nav ul li a{
 #banner_right h1{
 	margin:0 0 10px 0;
 }
+.container h1, .container>p{
+	text-align:center;
+}
+.container hr{
+	margin:0 40px;
+}
+.container>p{
+	margin:30px;
+	line-height:1.9em;
+}
 .post{
 	float:left;
 	width:26.333333333%;
@@ -128,6 +141,15 @@ section{
 #lorem{
 	background: transparent url("http://i12.tietuku.com/e17e013557544d84.jpg") no-repeat scroll 0px 0px / cover;
 	padding-top:50px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	    src='http://i12.tietuku.com/e17e013557544d84.jpg',
+	    sizingMethod='scale');
+}
+#lorem .container h1, #lorem .container p{
+	color:#FFFFFF;
+}
+#lorem .container p{
+	margin-bottom:100px;
 }
 .container{
 	width:80%;
@@ -135,11 +157,9 @@ section{
 	padding:50px 0;
 }
 .container_top{
-	padding:180px 0;
 	overflow:hidden;
 }
 .container_grids{
-	margin-top:50px;
 	overflow:hidden;
 }
 figure{
@@ -220,6 +240,9 @@ footer{
 		width:100%;
 		margin:20px 0;
 	}
+	.container>p{
+		line-height:1.4em;
+	}
 }
 @media screen and (max-width: 360px){
 	nav ul{
@@ -234,6 +257,13 @@ footer{
 	}
 	.container_top {
 		padding: 0;
+	}
+	#head p{
+		color:#FFFFFF;
+		float: right;
+		height:50px;
+		line-height:50px;
+		margin:0 25px;
 	}
 }
 @media screen and (max-width: 530px){
